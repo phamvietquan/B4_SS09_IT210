@@ -1,6 +1,6 @@
 package com.example.b4_ss09_it210.controller;
 
-import org.example.session9_ex4.model.Seller;
+import com.example.b4_ss09_it210.model.Seller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
