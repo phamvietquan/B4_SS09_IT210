@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bước 1 - Thông tin cá nhân</title>
+    <style> body { font-family: sans-serif; margin: 40px; } .form-group { margin-bottom: 15px; } </style>
+</head>
+<body>
+<h2>Đăng ký gian hàng (Bước 1/3)</h2>
+<h3>Thông tin chủ shop</h3>
+
+<form action="/register/step1" method="post" th:object="${seller}">
+    <div class="form-group">
+        <label>Họ và tên:</label><br>
+        <input type="text" th:field="*{fullName}" required>
+    </div>
+
+    <div class="form-group">
+        <label>Email liên hệ:</label><br>
+        <input type="email" th:field="*{email}" required>
+    </div>
+
+    <button type="submit" style="background: #007bff; color: white; padding: 10px; border: none; cursor: pointer;">
+        Tiếp tục (Bước 2)
+    </button>
+</form>
+</body>
+</html>
